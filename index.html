@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+  <header class="header">
+    <img src="./images/Vector.png" alt="логотип" class="header__logo">
+  </header>
+  <main class="content">
+    <section class="popup">
+      <form class="popup__container">
+        <img src="./images/Close Icon.png" alt="косой крестик закрытия попапа" class="popup__close-icon">
+        <h2 class="popup__redaction">Редактировать профиль</h2>
+        <input class="popup__personal" type="text">
+        <input class="popup__activity" type="text">
+        <button class="popup__save-button" type="submit">Сохранить</button>
+      </form>
+    </section>
+    <section class="profile">
+      <div class="profile__avatar-info">
+        <img src="./images/image.jpg" alt="фотография Кусто" class="profile__avatar">
+        <div class="profile-info">
+          <div class="profile-info__personal-button">
+            <h1 class="profile-info__personal">Жак-Ив Кусто</h1>
+            <button class="profile-info__edit-button">
+              <img src="./images/Vector2.png" alt="вектор" class="profile__vector">
+            </button>
+          </div>
+          <p class="profile-info__activity" id="profile-info__activity">Исследователь океана</p>
+        </div>
+      </div>
+      <button class="profile__add-button">
+        <img src="./images/Vector3.png" alt="вектор" class="profile__cross">
+      </button>
+    </section>
+    <section class="elements">
+      <div class="element">
+        <img src="./images/moscow.jpg" alt="Москва" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Москва</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+      <div class="element">
+        <img src="./images/petersburg.jpg" alt="Петербург" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Санкт-Петербург</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+      <div class="element">
+        <img src="./images/baikal.jpg" alt="Байкал" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Байкал</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+      <div class="element">
+        <img src="./images/yoshkar-ola.jpg" alt="Йошкар-Ола" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Йошкар-Ола</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+      <div class="element">
+        <img src="./images/elbrus.jpg" alt="Эльбрус" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Эльбрус</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+      <div class="element">
+        <img src="./images/kazan.jpg" alt="Казань" class="element__image">
+        <div class="element__title-heart">
+          <div class="element__title">Казань</div>
+          <img src="./images/Heart.png" alt="сердечко" class="element__heart">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">© 2022 Mesto Russia</footer>
+  <script async src="./scripts/index.js"></script>
+</body>
+</html>

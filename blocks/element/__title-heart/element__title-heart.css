@@ -1,0 +1,8 @@
+.element__title-heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+  min-height: 80px;
+}

@@ -1,0 +1,21 @@
+.profile__add-button {
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #FFFFFF;
+  padding: 0;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .profile__add-button {
+    width: 282px;
+    margin-top: 32px;
+  }
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+  cursor: url(../../../images/Layer\ 1\ 9.png), pointer;
+}

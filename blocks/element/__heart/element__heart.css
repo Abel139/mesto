@@ -1,0 +1,12 @@
+.element__heart {
+  height: 19px;
+  width: 22px;
+  color: #000000;
+  margin-top: 31px;
+  margin-right: 20px;
+}
+
+.element__heart:hover {
+  opacity: 0.5;
+  cursor: url(../../../images/Layer\ 1\ 9.png), pointer;
+}
