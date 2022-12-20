@@ -7,12 +7,14 @@
   line-height: 22px;
   text-align: center;
   background: #000000;
+  margin-top: 16px;
+  border: 0;
   border-radius: 2px;
+  z-index: 3;
 }
 
 .popup__save-button:hover {
   opacity: 0.8;
-  cursor: url(../../../images/Layer\ 1\ 9.png), pointer;
 }
 
 @media screen and (max-width: 550px) {
@@ -21,5 +23,6 @@
     line-height: 17px;
     width: 238px;
     height: 46px;
+    margin-top: 11px;
   }
 }
