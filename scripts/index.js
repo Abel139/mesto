@@ -3,8 +3,8 @@ let popup = document.querySelector ('.popup');
 let popupCloseIcon = document.querySelector ('.popup__close-icon');
 let profileInfoPersonal = document.querySelector ('.profile-info__personal');
 let profileInfoActivity = document.querySelector ('.profile-info__activity');
-let popupPersonal = document.querySelector ('.popup__input_personal');
-let popupActivity = document.querySelector ('.popup__input_activity');
+let popupPersonal = document.querySelector ('.popup__input_type_personal');
+let popupActivity = document.querySelector ('.popup__input_type_activity');
 let popupContainer = document.querySelector ('.popup__container');
 
 function openPopup () {

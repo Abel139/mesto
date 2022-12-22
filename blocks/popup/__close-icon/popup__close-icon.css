@@ -10,6 +10,7 @@
   background-size: contain;
   z-index: 3;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .popup__close-icon:hover {

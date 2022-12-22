@@ -14,7 +14,7 @@
   .profile-info__personal {
     font-size: 27px;
     line-height: 32.68px;
-    margin: 28px 10px 7px 0;
+    margin: 28px 10px 7px 28px;
     max-width: 230px;
   }
 }
