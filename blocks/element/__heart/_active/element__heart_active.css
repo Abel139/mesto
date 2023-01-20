@@ -1,0 +1,13 @@
+.element__heart_active {
+  height: 19px;
+  min-width: 22px;
+  margin: 30px 20px 30px 0;
+  background-image: url(../../../../images/Union.svg);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+}
+
+.element__heart:hover {
+  opacity: 0.5;
+}

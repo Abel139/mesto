@@ -30,7 +30,9 @@
       </button>
     </section>
     <section class="elements">
+      <!--
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/moscow.jpg" alt="Покровский собор в Москве" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Москва</h2>
@@ -38,6 +40,7 @@
         </div>
       </div>
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/petersburg.jpg" alt="Дворцовый мост и Петропавловская крепость в Санкт-Петербурге" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Санкт-Петербург</h2>
@@ -45,6 +48,7 @@
         </div>
       </div>
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/baikal.jpg" alt="берег озера Байкал" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Байкал</h2>
@@ -52,6 +56,7 @@
         </div>
       </div>
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/yoshkar-ola.jpg" alt="набережная реки Кокшага в Йошкар-Оле" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Йошкар-Ола</h2>
@@ -59,6 +64,7 @@
         </div>
       </div>
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/elbrus.jpg" alt="силуэт человека на фоне Эльбруса" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Эльбрус</h2>
@@ -66,28 +72,60 @@
         </div>
       </div>
       <div class="element">
+        <button class="element__delete" type="button"></button>
         <img src="./images/kazan.jpg" alt="казанский кремль" class="element__image">
         <div class="element__title-heart">
           <h2 class="element__title">Казань</h2>
           <button class="element__heart" type="button"></button>
         </div>
       </div>
+    -->
     </section>
   </main>
   <footer class="footer">© 2022 Mesto Russia</footer>
-  <section class="popup">
+  <section class="popup popup-profile">
     <div class="popup__flex-container">
       <div class="popup__container">
-        <button class="popup__close-icon" type="button"></button>
+        <button class="popup__close-icon popup__close-profile" type="button"></button>
         <h2 class="popup__redaction">Редактировать профиль</h2>
-        <form class="popup__form" name="form">
+        <form class="popup__form popup__form_type_profile" name="form-profile">
           <input class="popup__input popup__input_type_personal" type="text" name="personal">
           <input class="popup__input popup__input_type_activity" type="text" name="activity">
-          <button class="popup__save-button" type="submit">Сохранить</button>
+          <button class="popup__save-button popup__profile-button" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
   </section>
+  <section class="popup popup-place">
+    <div class="popup__flex-container">
+      <div class="popup__container">
+        <button class="popup__close-icon popup__close-place" type="button"></button>
+        <h2 class="popup__redaction">Новое место</h2>
+        <form class="popup__form popup__form_type_place" name="form-place">
+          <input class="popup__input popup__input_type_name" type="text" name="name" placeholder="Название">
+          <input class="popup__input popup__input_type_image" type="url" name="image" placeholder="Ссылка на картинку">
+          <button class="popup__save-button popup__image-button" type="submit">Создать</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="popup popup-image">
+    <div class="popup-image__container">
+      <button class="popup__close-icon popup__close-image" type="button"></button>
+      <img src ="#" alt="Полноформатный вариант кликнутой фотографии" class="popup__image">
+      <p class="popup__image-name"></p>
+    </div>
+  </section>
+  <template id="elements">
+    <div class="element">
+      <button class="element__delete" type="button"></button>
+      <img src="#" alt="Фотография представленного места" class="element__image">
+      <div class="element__title-heart">
+        <h2 class="element__title"></h2>
+        <button class="element__heart" type="button"></button>          
+      </div>
+    </div>
+  </template>
   <script async src="./scripts/index.js"></script>
 </body>
 </html>
