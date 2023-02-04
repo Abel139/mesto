@@ -1,0 +1,29 @@
+.popup__save-batton_inactive {
+  width: 358px;
+  height: 50px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  background-color: transparent;
+  margin-top: 16px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  z-index: 3;
+  /*cursor: pointer;*/
+  }
+      
+.popup__save-button:hover {
+  opacity: 0.8;
+}
+      
+@media screen and (max-width: 550px) {
+  .popup__save-button {
+    font-size: 14px;
+    line-height: 17px;
+    width: 238px;
+    height: 46px;
+    margin-top: 11px;
+  }
+}

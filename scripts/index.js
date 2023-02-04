@@ -14,6 +14,7 @@ const popupInputImage = document.querySelector('.popup__input_type_image');
 
 const popupImageButton = document.querySelector ('.popup__image-button');
 
+//const popups = document.querySelectorAll('popup');
 const popupProfile = document.querySelector('.popup-profile');
 const popupImage = document.querySelector('.popup-image');
 const popupPlace = document.querySelector ('.popup-place');
@@ -59,6 +60,16 @@ const initialCards = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
+
+
+const config = ({
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__save-button',
+  inactiveButtonClass: 'popup__save-button_inactive',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__input-error_active'
+});
 
 
 closeButtons.forEach((button) => {
@@ -131,3 +142,55 @@ elements.append(...initialCards.map(initialCard));
 formProfile.addEventListener('submit', handleFormSubmit);
 
 formPlace.addEventListener('submit', addCard);
+
+
+document.addEventListener('click', (event) => {
+  if (event.target === popupProfile) {
+	  closePopup(popupProfile);
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (event.target === popupPlace) {
+	  closePopup(popupPlace);
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (event.target === popupImage) {
+	  closePopup(popupImage);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+	  closePopup(popupProfile);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+	  closePopup(popupPlace);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+	  closePopup(popupImage);
+  }
+});
+
+
+/*
+const config = ({
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__save-button',
+  inactiveButtonClass: 'popup__save-button_inactive',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__input-error_active'
+});
+*/
+
+
+enableValidation(config);
